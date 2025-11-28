@@ -1,9 +1,11 @@
 <script setup>
-import Photo from './components/Photo.vue'
+  import Photo from './components/Photo.vue'
+  import Navigation from './components/Navigation.vue'
 </script>
 
 <template>
-  <div class="w-full h-full flex items-center justify-center py-10">
+  <div class="w-full h-full flex flex-col items-center justify-center">
+    <Navigation />
     <Photo />
   </div>
 </template>
