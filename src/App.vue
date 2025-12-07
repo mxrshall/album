@@ -23,7 +23,9 @@ const photos = [
 
 <template>
   <div class="w-full h-full flex flex-col items-center justify-center py-32">
-    <Navigation />
+    <Navigation 
+      :photo="photos"
+    />
     <Photo 
       v-for="(photo, index) in photos" 
       :key="index"
