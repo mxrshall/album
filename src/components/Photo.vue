@@ -11,22 +11,26 @@ const props = defineProps({
 
 const imgRef = ref(null)
 const lineRef = ref(null)
+const linePointRef = ref(null)
 
 onMounted(() => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 animate(imgRef.value, { opacity: [0, 1] }, { duration: 1, easing: 'ease-out' })
-                animate(lineRef.value, { height: ['0%', '40%'] }, { duration: 1, easing: 'ease-out', delay: 0.5 })
+                animate(lineRef.value, { height: ['0%', '20%'] }, { duration: 0.6, easing: 'ease-out', delay: 0.4 })
+                animate(linePointRef.value, { scale: [0, 1] }, { duration: 0.2, easing: 'ease-out', delay: 1 })
                 observer.unobserve(imgRef.value)
                 observer.unobserve(lineRef.value)
+                observer.unobserve(linePointRef.value)
             }
         })
-    }, { threshold: 0.5 })
+    }, { threshold: 0.8 })
 
     if (imgRef.value) {
         observer.observe(imgRef.value)
         observer.observe(lineRef.value)
+        observer.observe(linePointRef.value)
     }
 })
 </script>
@@ -53,6 +57,10 @@ onMounted(() => {
             ref="lineRef"
             class="w-0.5 bg-black mt-5"
             :style="{ height: '0%' }"
-        ></div>
+        />
+        <div
+            ref="linePointRef"
+            class="w-2 h-2 bg-black rounded-full"
+        />
     </div>
 </template>
