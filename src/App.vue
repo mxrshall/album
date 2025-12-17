@@ -1,5 +1,6 @@
 <script setup>
   import Navigation from "./components/Navigation.vue"
+  import Intro from "./components/Intro.vue"
 
   import photo1 from './assets/images/photo1.jpeg'
   import photo2 from './assets/images/photo2.jpeg'
@@ -24,6 +25,7 @@
 
 <template>
   <div>
+    <Intro />
     <Navigation 
       :photo="photos" 
     />
