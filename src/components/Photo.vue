@@ -1,14 +1,17 @@
 <script setup>
 import { defineProps, ref, onMounted } from 'vue'
 import { animate } from 'motion'
+import { useRouter } from 'vue-router'
 
 const props = defineProps({
+    id: Number,
     title: String,
     date: String,
     image: String,
     position: Number
 })
 
+const router = useRouter()
 const imgRef = ref(null)
 const lineRef = ref(null)
 const linePointRef = ref(null)
@@ -33,10 +36,20 @@ onMounted(() => {
         observer.observe(linePointRef.value)
     }
 })
+
+const goToPage = (id) => {
+  router.push({
+    name: 'event',
+    params: { id }
+  })
+}
 </script>
 
 <template>
-    <div class="w-full h-[60vh] flex flex-col items-center justify-start pt-5">
+    <div 
+        class="w-full h-[60vh] flex flex-col items-center justify-start pt-5"
+        @click="goToPage(props.id)"
+    >
         <div
             ref="imgRef"
             class="w-[75%] flex flex-col items-center justify-center bg-gray-100 p-5 text-center shadow-2xl relative"

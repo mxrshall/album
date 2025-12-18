@@ -4,8 +4,12 @@ import Homepage from './Homepage.vue';
 import Event from './Event.vue';
 
 const routes = [
-  { path: '/', component: Homepage },
-  { path: '/event', component: Event }
+  { path: '/', name: 'Homepage', component: Homepage },
+  { 
+    path: '/event/:id',
+    name: 'event',
+    component: () => import('./Event.vue')
+  }
 ];
 
 const router = createRouter({

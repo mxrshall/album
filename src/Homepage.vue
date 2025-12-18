@@ -12,14 +12,14 @@ import photo7 from './assets/images/photo7.jpg'
 import photo8 from './assets/images/photo8.jpg'
 
 const photos = [
-  { title: "Bye Bye Semester MTF", date: "9.dec 2025", image: photo8, position: 5 },
-  { title: "Goodbye Party UCM", date: "2.dec 2025", image: photo7, position: -5 },
-  { title: "OOZI for students", date: "25.nov 2025", image: photo4, position: 5 },
-  { title: "Východňarovica", date: "11.nov 2025", image: photo3, position: -5 },
-  { title: "10Bar Rave", date: "15.okt 2025", image: photo5, position: 5 },
-  { title: "Rozlúčka s letom Chtelnica", date: "6.sep 2025", image: photo6, position: -5 },
-  { title: "Privítanie leta Chtelnica", date: "28.jún 2025", image: photo2, position: 5 },
-  { title: "APE halloween", date: "31.okt 2024", image: photo1, position: -5 }
+  { id: 1, title: "Bye Bye Semester MTF", date: "9.dec 2025", image: photo8, position: 5 },
+  { id: 2, title: "Goodbye Party UCM", date: "2.dec 2025", image: photo7, position: -5 },
+  { id: 3, title: "OOZI for students", date: "25.nov 2025", image: photo4, position: 5 },
+  { id: 4, title: "Východňarovica", date: "11.nov 2025", image: photo3, position: -5 },
+  { id: 5, title: "10Bar Rave", date: "15.okt 2025", image: photo5, position: 5 },
+  { id: 6, title: "Rozlúčka s letom Chtelnica", date: "6.sep 2025", image: photo6, position: -5 },
+  { id: 7, title: "Privítanie leta Chtelnica", date: "28.jún 2025", image: photo2, position: 5 },
+  { id: 8, title: "APE halloween", date: "31.okt 2024", image: photo1, position: -5 }
 ]
 </script>
 
@@ -31,6 +31,7 @@ const photos = [
     <Photo 
       v-for="(photo, index) in photos" 
       :key="index"
+      :id="photo.id"
       :title="photo.title" 
       :date="photo.date" 
       :image="photo.image" 
