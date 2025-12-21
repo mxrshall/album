@@ -10,10 +10,11 @@ import photo5 from './assets/images/photo5.jpeg'
 import photo6 from './assets/images/photo6.jpeg'
 import photo7 from './assets/images/photo7.jpg'
 import photo8 from './assets/images/photo8.jpg'
+import photo9 from './assets/images/photo9.jpg'
 
 const photos = [
   { id: 1, title: "Bye Bye Semester MTF", date: "9.dec 2025", image: photo8 },
-  { id: 2, title: "Goodbye Party UCM", date: "2.dec 2025", image: photo7 },
+  { id: 2, title: "Goodbye Party UCM", date: "2.dec 2025", image: [photo7, photo9] },
   { id: 3, title: "OOZI for students", date: "25.nov 2025", image: photo4 },
   { id: 4, title: "Východňarovica", date: "11.nov 2025", image: photo3 },
   { id: 5, title: "10Bar Rave", date: "15.okt 2025", image: photo5 },
@@ -30,13 +31,17 @@ const event = computed(() =>
 </script>
 
 <template>
-  <div v-if="event" class="max-w-2xl mx-auto p-6">
-    <img :src="event.image" class="rounded-xl mb-4" />
-    <h1 class="text-3xl font-bold">{{ event.title }}</h1>
-    <p class="text-gray-500">{{ event.date }}</p>
-  </div>
+  <div class="w-full h-full flex flex-col items-center justify-center py-32">
+    <div v-if="event" class="max-w-2xl mx-auto p-6 space-y-6">
+      <img
+        v-for="(img, index) in (Array.isArray(event.image) ? event.image : [event.image])"
+        :key="index"
+        :src="img"
+      />
+    </div>
 
-  <div v-else class="text-center mt-10">
-    <h1 class="text-3xl font-bold">Event not found</h1>
+    <div v-else class="text-center mt-10">
+      <h1 class="text-3xl font-bold">Event not found</h1>
+    </div>
   </div>
 </template>
