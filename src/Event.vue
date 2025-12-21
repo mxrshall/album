@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
+import PhotosOverlay from './components/PhotosOverlay.vue'
 import photo1 from './assets/images/photo1.jpeg'
 import photo2 from './assets/images/photo2.jpeg'
 import photo3 from './assets/images/photo3.jpeg'
@@ -33,10 +34,9 @@ const event = computed(() =>
 <template>
   <div class="w-full h-full flex flex-col items-center justify-center py-32">
     <div v-if="event" class="max-w-2xl mx-auto p-6 space-y-6">
-      <img
+      <PhotosOverlay
         v-for="(img, index) in (Array.isArray(event.image) ? event.image : [event.image])"
-        :key="index"
-        :src="img"
+        :image="img" 
       />
     </div>
 
