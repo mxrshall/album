@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
 import PhotosOverlay from './components/PhotosOverlay.vue'
+import VideoOverlay from './components/VideoOverlay.vue'
 import photo1 from './assets/images/photo1.jpeg'
 import photo2 from './assets/images/photo2.jpeg'
 import photo3 from './assets/images/photo3.jpeg'
@@ -19,6 +20,10 @@ import photo13 from './assets/images/photo13.jpg'
 import photo14 from './assets/images/photo14.jpg'
 import photo15 from './assets/images/photo15.jpg'
 
+import video1 from './assets/video/video1.mp4'
+import video2 from './assets/video/video2.mp4'
+import video3 from './assets/video/video3.mp4'
+
 const photos = [
   { id: 1, title: "Bye Bye Semester MTF", date: "9.dec 2025", image: photo8, position: 5 },
   { id: 2, title: "Goodbye Party UCM", date: "2.dec 2025", image: [photo7, photo9] },
@@ -26,7 +31,7 @@ const photos = [
   { id: 4, title: "Východňarovica", date: "11.nov 2025", image: photo3, position: -5 },
   { id: 5, title: "Prvákovica semafor MTF", date: "4.nov 2025", image: [photo10, photo11, photo12, photo13, photo14], position: 5 },
   { id: 6, title: "10Bar Rave", date: "15.okt 2025", image: photo5, position: -5 },
-  { id: 7, title: "Open semester - Právnická", date: "30.sep 2025", image: photo15, position: 5 },
+  { id: 7, title: "Open semester - Právnická", date: "30.sep 2025", image: photo15, video: [video1, video2, video3], position: 5 },
   { id: 8, title: "Rozlúčka s letom Chtelnica", date: "6.sep 2025", image: photo6, position: -5 },
   { id: 9, title: "Privítanie leta Chtelnica", date: "28.jún 2025", image: photo2, position: 5 },
   { id: 10, title: "APE halloween", date: "31.okt 2024", image: photo1, position: -5 }
@@ -47,9 +52,13 @@ const event = computed(() =>
         :image="img" 
       />
     </div>
-
-    <div v-else class="text-center mt-10">
-      <h1 class="text-3xl font-bold">Event not found</h1>
+    <div v-if="event?.video" class="max-w-2xl mx-auto p-6 space-y-6">
+      <VideoOverlay
+        v-for="(vid, index) in (Array.isArray(event.video) ? event.video : [event.video])"
+        :video="vid" 
+      />
     </div>
+
+    <div v-else class="text-center mt-10" />
   </div>
 </template>
