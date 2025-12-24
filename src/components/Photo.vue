@@ -7,6 +7,7 @@ const props = defineProps({
     id: Number,
     title: String,
     date: String,
+    thumbnail: String,
     image: String,
     position: Number
 })
@@ -57,7 +58,7 @@ const goToPage = (id) => {
         >
             <div class="w-full h-[25vh] overflow-hidden">
                 <img 
-                    :src="props.image" 
+                    :src="props.thumbnail" 
                     :alt="props.title" 
                     class="w-full h-full object-cover"
                 />
