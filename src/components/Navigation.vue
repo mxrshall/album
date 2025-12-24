@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { animate } from 'motion'
 import { useRouter } from 'vue-router'
 
+import logo from '../../public/logo.png'
 import photo1 from '../assets/images/photo1.jpeg'
 import photo2 from '../assets/images/photo2.jpeg'
 import photo3 from '../assets/images/photo3.jpeg'
@@ -47,7 +48,13 @@ const goToPage = (id) => {
 </script>
 
 <template>
-  <nav class="w-full h-20 bg-black z-20 flex items-center justify-end px-5 fixed top-0">
+  <nav class="w-full h-20 bg-black z-20 flex items-center justify-between px-5 fixed top-0">
+    <img
+      :src="logo"
+      alt="Logo"
+      class="w-12 h-12 cursor-pointer"
+      @click="router.push({ name: 'Homepage' })"
+    />
     <v-icon
       name="co-hamburger-menu"
       class="w-10 h-10 text-white cursor-pointer"
