@@ -54,7 +54,7 @@ export const photos = [
   { id: 7, title: "10Bar Rave", date: "15.okt 2025", thumbnail: photo5, image: photo5, position: 5 },
   { id: 8, title: "Open zimného semestra - Právnická", date: "30.sep 2025", thumbnail: photo15, image: photo15, video: [video1, video2, video3], position: -5 },
   { id: 9, title: "Rozlúčka s letom Chtelnica", date: "6.sep 2025", thumbnail: photo6, image: photo6, video: [video14, video15], position: 5 },
-  { id: 10, title: "Hody Chtelnica", date: "22.-23.aug.2025", thumbnail: photo19, image: [photo19, photo20], video: [video16, video17, video18, video19], position: -5 },
+  { id: 10, title: "Hody Chtelnica", date: "22.-23.aug.2025", thumbnail: photo20, image: photo20, video: [video16, video17, video18, video19], position: -5 },
   { id: 11, title: "Hody Trebatice", date: "15.-16.aug.2025", thumbnail: photo21, image: [photo21, photo22], video: [video20, video21, video22], position: 5 },
   { id: 12, title: "Privítanie leta Chtelnica", date: "28.jún 2025", thumbnail: photo2, image: photo2, position: -5 },
   { id: 13, title: "Open letného semestra - Právnická", date: "17.2.2025", thumbnail: photo16, image: photo16, video: [video4, video5, video6, video7], position: 5 },
