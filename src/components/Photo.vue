@@ -48,7 +48,7 @@ const goToPage = (id) => {
 
 <template>
     <div 
-        class="w-full h-[60vh] flex flex-col items-center justify-start pt-5"
+        class="w-full h-[65vh] flex flex-col items-center justify-start pt-5 mb-5"
         @click="goToPage(props.id)"
     >
         <div
