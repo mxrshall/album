@@ -8,7 +8,7 @@ import { photos } from './assets/data.js'
 <template>
   <div class="w-full h-full flex flex-col items-center justify-center py-32">
     <Photo 
-      v-for="(photo, index) in photos" 
+      v-for="(photo, index) in [...photos].reverse()"
       :key="index"
       :id="photo.id"
       :title="photo.title" 
