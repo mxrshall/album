@@ -34,6 +34,13 @@ import photo33 from '../assets/images/photo33.jpg'
 import photo34 from '../assets/images/photo34.jpg'
 import photo35 from '../assets/images/photo35.jpg'
 import photo36 from '../assets/images/photo36.jpg'
+import photo37 from '../assets/images/photo37.jpg'
+import photo38 from '../assets/images/photo38.jpg'
+import photo39 from '../assets/images/photo39.jpeg'
+import photo40 from '../assets/images/photo40.jpeg'
+import photo41 from '../assets/images/photo41.jpg'
+import photo42 from '../assets/images/photo42.jpg'
+import photo43 from '../assets/images/photo43.jpg'
 
 import video1 from '../assets/video/video1.mp4'
 import video2 from '../assets/video/video2.mp4'
@@ -89,5 +96,6 @@ export const photos = [
   { id: 16, title: "10Bar Semestrovica", date: "17.mar 2026", thumbnail: photo28, image: [photo28], position: -5 },
   { id: 17, title: "Beánia 2", date: "24.mar 2026", thumbnail: photo27, image: [photo27], video: [video26, video28], position: 5 },
   { id: 18, title: "Goodbye Party UCM 2", date: "20.apr 2026", thumbnail: photo32, image: [photo32, photo33, photo34, photo35], video: [video30, video31, video32, video33], position: -5 },
-  { id: 19, title: "Open zimného semestra 2026 - Právnická", date: "21.apr 2026", thumbnail: photo36, image: photo36, video: [video34], position: 5 },
+  { id: 19, title: "Oldies party - Právnická", date: "21.apr 2026", thumbnail: photo36, image: photo36, video: [video34], position: 5 },
+  { id: 20, title: "Amos Nonstop", date: "7.-9.maj 2026", thumbnail: photo37, image: [photo37, photo38, photo39, photo40, photo41, photo42, photo43], position: -5 },
 ]
