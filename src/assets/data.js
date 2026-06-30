@@ -41,6 +41,16 @@ import photo40 from '../assets/images/photo40.jpeg'
 import photo41 from '../assets/images/photo41.jpg'
 import photo42 from '../assets/images/photo42.jpg'
 import photo43 from '../assets/images/photo43.jpg'
+import photo44 from '../assets/images/photo44.jpg'
+import photo45 from '../assets/images/photo45.jpg'
+import photo46 from '../assets/images/photo46.jpg'
+import photo47 from '../assets/images/photo47.jpg'
+import photo48 from '../assets/images/photo48.jpg'
+import photo49 from '../assets/images/photo49.jpg'
+import photo50 from '../assets/images/photo50.jpg'
+import photo51 from '../assets/images/photo51.jpg'
+import photo52 from '../assets/images/photo52.jpg'
+import photo53 from '../assets/images/photo53.jpg'
 
 import video1 from '../assets/video/video1.mp4'
 import video2 from '../assets/video/video2.mp4'
@@ -76,11 +86,19 @@ import video31 from '../assets/video/video31.mp4'
 import video32 from '../assets/video/video32.mp4'
 import video33 from '../assets/video/video33.mp4'
 import video34 from '../assets/video/video34.mp4'
+import video35 from '../assets/video/video35.mp4'
+import video36 from '../assets/video/video36.mp4'
+import video37 from '../assets/video/video37.mp4'
+import video38 from '../assets/video/video38.mp4'
+import video39 from '../assets/video/video39.mp4'
+import video40 from '../assets/video/video40.mp4'
+import video41 from '../assets/video/video41.mp4'
+import video42 from '../assets/video/video42.mp4'
 
 export const photos = [  
   { id: 1, title: "APE halloween", date: "31.okt. 2024", thumbnail: photo1, image: photo1, position: 5},
   { id: 2, title: "Open letného semestra 2025 - Europa 2", date: "17.feb. 2025", thumbnail: photo16, image: photo16, video:[video4 ,video5 ,video6 ,video7], position : -5},
-  { id: 3, title: "Privítanie leta Chtelnica", date: "28.jún 2025", thumbnail: photo2, image: photo2, position: 5 },
+  { id: 3, title: "Privítanie leta Chtelnica 2025", date: "28.jún 2025", thumbnail: photo2, image: photo2, position: 5 },
   { id: 4, title: "Hody Trebatice", date: "15.-16.aug.2025", thumbnail: photo21, image: [photo21, photo22], video: [video20, video21, video22], position: -5 },
   { id: 5, title: "Open zimného semestra - Právnická", date: "30.sep 2025", thumbnail: photo15, image: photo15, video: [video1, video2, video3], position: 5 },
   { id: 6, title: "10Bar Rave", date: "15.okt 2025", thumbnail: photo5, image: photo5, position: -5 },
@@ -98,4 +116,5 @@ export const photos = [
   { id: 18, title: "Goodbye Party UCM 2", date: "20.apr 2026", thumbnail: photo32, image: [photo32, photo33, photo34, photo35], video: [video30, video31, video32, video33], position: -5 },
   { id: 19, title: "Oldies party - Právnická", date: "21.apr 2026", thumbnail: photo36, image: photo36, video: [video34], position: 5 },
   { id: 20, title: "Amos Nonstop", date: "7.-9.maj 2026", thumbnail: photo37, image: [photo37, photo38, photo39, photo40, photo41, photo42, photo43], position: -5 },
+  { id: 21, title: "Privítanie leta Chtelnica 2026", date: "26.-27.jún 2026", thumbnail: photo44, image: [photo44, photo45, photo46, photo47, photo48, photo49, photo50, photo51, photo52, photo53], video: [video35, video36, video37, video38, video39, video40, video41, video42], position: 5 },
 ]
