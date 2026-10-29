@@ -51,6 +51,9 @@ import photo50 from '../assets/images/photo50.jpg'
 import photo51 from '../assets/images/photo51.jpg'
 import photo52 from '../assets/images/photo52.jpg'
 import photo53 from '../assets/images/photo53.jpg'
+import photo54 from '../assets/images/photo54.jpg'
+import photo55 from '../assets/images/photo55.jpg'
+import photo56 from '../assets/images/photo56.jpg'
 
 import video1 from '../assets/video/video1.mp4'
 import video2 from '../assets/video/video2.mp4'
@@ -94,6 +97,8 @@ import video39 from '../assets/video/video39.mp4'
 import video40 from '../assets/video/video40.mp4'
 import video41 from '../assets/video/video41.mp4'
 import video42 from '../assets/video/video42.mp4'
+import video43 from '../assets/video/video43.mp4'
+import video44 from '../assets/video/video44.mp4'
 
 export const photos = [  
   { id: 1, title: "APE halloween", date: "31.okt. 2024", thumbnail: photo1, image: photo1, position: 5},
@@ -117,4 +122,7 @@ export const photos = [
   { id: 19, title: "Oldies party - Právnická", date: "21.apr 2026", thumbnail: photo36, image: photo36, video: [video34], position: 5 },
   { id: 20, title: "Amos Nonstop", date: "7.-9.maj 2026", thumbnail: photo37, image: [photo37, photo38, photo39, photo40, photo41, photo42, photo43], position: -5 },
   { id: 21, title: "Privítanie leta Chtelnica 2026", date: "26.-27.jún 2026", thumbnail: photo44, image: [photo44, photo45, photo46, photo47, photo48, photo49, photo50, photo51, photo52, photo53], video: [video35, video36, video37, video38, video39, video40, video41, video42], position: 5 },
+  { id: 22, title: "Open zimného semestra - MTF", date: "22.sep 2026", thumbnail: photo54, image: [photo54, photo55], video: [video43], position: -5 },
+  { id: 23, title: "Open zimného semestra - UCM", date: "5.okt 2026", thumbnail: photo56, image: photo56, video: [video44], position: 5 },
+
 ]
